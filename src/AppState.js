@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 
 class Contador extends Component {
+  constructor() {
+    super()
+    this.state = {contador : 1}
+  }
+
   render() {
-    const contador = 0
-    return <span>{contador}</span>
+    return <span>{this.state.contador}</span>
   }
 }
 
